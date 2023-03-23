@@ -39,7 +39,7 @@
 ## Tasks
 
 <details>
-<summary><a href="./0-main.c">0. isupper</a></summary><br>
+<summary><a href="./0-isupper.c">0. isupper</a></summary><br>
 
 Write a function that checks for uppercase character.
 
@@ -76,4 +76,43 @@ a: 0
 julien@ubuntu:~/0x04$ 
 ```
 
+</details>
+
+<details>
+<summary><a href="./1-isdigit.c">1. isdigit</a></summary><br>
+
+Write a function that checks for a digit (`0` through `9`).
+
+- Prototype: `int _isdigit(int c)`;
+- Returns `1` if `c` is a digit
+- Returns `0` otherwise
+
+FYI: The standard library provides a similar function: `isdigit`. Run `man isdigit` to learn more.
+
+```bash
+julien@ubuntu:~/0x04$ cat 1-main.c 
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char c;
+
+    c = '0';
+    printf("%c: %d\n", c, _isdigit(c));
+    c = 'a';
+    printf("%c: %d\n", c, _isdigit(c));
+    return (0);
+}
+julien@ubuntu:~/0x04$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-main.c 1-isdigit.c -o 1-isdigit
+julien@ubuntu:~/0x04$ ./1-isdigit 
+0: 1
+a: 0
+julien@ubuntu:~/0x04$ 
+```
 </details>
