@@ -77,8 +77,8 @@ Based on the `main.c` file above, create a file named `0-main.c`. This file must
 
 You are not coding the solution / function, you’re just testing it! However, you can adapt your function from `0x01. C - Variables, if, else, while - Task #0` to compile with this main file to test locally.
 
-- You only need to upload `0-main.c` and `main.h` for this task. We will provide our own positive_or_negative() function.
-- You are not allowed to add or remove lines of code, you may change only one line in this task.
+- You only need to upload `0-main.c` and `main.h` for this task. We will provide our own `positive_or_negative()` function.
+- You are not allowed to add or remove lines of code, you may change only **one** line in this task.
 
 ```bash
 carrie@ubuntu:/debugging$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 positive_or_negative.c 0-main.c -o 0-main
@@ -89,4 +89,54 @@ carrie@ubuntu:/debugging$ wc -l 0-main.c
 carrie@ubuntu:/debugging$ 
 ```
 
+</details>
+
+<details>
+<summary><a href="./1-main.c">1. Like, comment, subscribe</a></summary><br>
+
+Copy this main file. Comment out (don’t delete it!) the part of the code that is causing the output to go into an infinite loop.
+
+- Don’t add or remove any lines of code, as we will be checking your line count. You are only allowed to comment out existing code.
+- You do not have to compile with `-Wall -Werror -Wextra -pedantic` for this task.
+
+```bash
+carrie@ubuntu:/debugging$ cat 1-main.c
+#include <stdio.h>
+
+/**
+* main - causes an infinite loop
+* Return: 0
+*/
+
+int main(void)
+{
+        int i;
+
+        printf("Infinite loop incoming :(\n");
+
+        i = 0;
+
+        while (i < 10)
+        {
+                putchar(i);
+        }
+
+        printf("Infinite loop avoided! \\o/\n");
+
+        return (0);
+}
+carrie@ubuntu:/debugging$
+```
+
+Your output should look like this:
+
+```bash
+carrie@ubuntu:/debugging$ gcc -std=gnu89 1-main.c -o 1-main
+carrie@ubuntu:/debugging$ ./1-main
+Infinite loop incoming :(
+Infinite loop avoided! \o/
+carrie@ubuntu:/debugging$ wc -l 1-main.c
+24 1-main.c
+carrie@ubuntu:/debugging$
+```
 </details>
