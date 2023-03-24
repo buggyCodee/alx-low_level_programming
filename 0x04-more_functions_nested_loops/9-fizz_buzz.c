@@ -13,11 +13,11 @@ int main(void)
 	for (start = 1; start <= 100; start++)
 	{
 		if (start % 3 == 0 && start % 5 == 0)
-			puts("FizzBuzz ");
+			printf("FizzBuzz ");
 		else if (start % 3 == 0)
-			puts("Fizz ");
+			printf("Fizz ");
 		else if (start % 5 == 0)
-			puts("Buzz ");
+			printf("Buzz ");
 		else if (start == 100)
 			printf("%d\n", start);
 		else
