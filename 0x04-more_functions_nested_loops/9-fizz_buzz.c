@@ -11,16 +11,21 @@ int main(void)
 	int start;
 
 	for (start = 1; start <= 100; start++)
+	{
 		if (start % 3 == 0 && start % 5 == 0)
-			printf("FizzBuzz ");
+			printf("FizzBuzz");
 		else if (start % 3 == 0)
-			printf("Fizz ");
+			printf("Fizz");
 		else if (start % 5 == 0)
-			printf("Buzz ");
+			printf("Buzz");
 		else
-			printf("%d ", start);
+			printf("%d", start);
 
-	putchar('\n');
+		if (start == 100)
+			putchar('\n');
+		else
+			putchar(' ');
+	}
 
 	return (0);
 }
