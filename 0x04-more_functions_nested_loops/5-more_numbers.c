@@ -10,7 +10,6 @@ void more_numbers(void)
 {
 	int i;
 	int j;
-	char c, n;
 
 	for (i = 0; i < 10; i++)
 	{
