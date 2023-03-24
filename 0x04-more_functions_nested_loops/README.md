@@ -208,3 +208,42 @@ julien@ubuntu:~/0x04$
 ```
 
 </details>
+
+<details>
+<summary><a href="./5-more_numbers.c">5. Numbers constitute the only universal language</a></summary><br>
+
+Write a function that prints 10 times the numbers, from `0` to `14`, followed by a new line.
+
+- Prototype: `void more_numbers(void);`
+- You can only use `_putchar` three times in your code
+
+```bash
+julien@ubuntu:~/0x04$ cat 5-main.c
+#include "main.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    more_numbers();
+    return (0);
+}
+julien@ubuntu:~/0x04$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-more_numbers.c -o 5-more_numbers
+julien@ubuntu:~/0x04$ ./5-more_numbers 
+01234567891011121314
+01234567891011121314
+01234567891011121314
+01234567891011121314
+01234567891011121314
+01234567891011121314
+01234567891011121314
+01234567891011121314
+01234567891011121314
+01234567891011121314
+julien@ubuntu:~/0x04
+```
+
+</details>
