@@ -36,6 +36,8 @@
 - The prototypes of all your functions and the prototype of the function `_putchar` should be included in your header file called `main.h`
 - Don’t forget to push your header file
 
+---
+
 ## Tasks
 
 <details>
@@ -154,7 +156,7 @@ julien@ubuntu:~/0x04$
 Write a function that prints the numbers, from `0` to `9`, followed by a new line.
 
 - Prototype: `void print_numbers(void);`
-- You can only `use _putchar` twice in your code
+- You can only use `_putchar` twice in your code
 
 ```bash
 julien@ubuntu:~/0x04$ cat 3-main.c 
