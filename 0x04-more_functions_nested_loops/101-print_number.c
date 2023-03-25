@@ -55,6 +55,12 @@ void print_number(int n)
 {
 	int digits = count_digits(n);
 
+	if (n < 0)
+	{
+		n = -n;
+		_putchar('-');
+	}
+
 	while (digits--)
 		_putchar('0' + (n / power(10, digits)) % 10);
 }
