@@ -18,7 +18,7 @@ int count_digits(int num)
 		digits++;
 	}
 
-	if (digits == 0)
+	if (digits < 1)
 		digits++;
 
 	return (digits);
