@@ -313,3 +313,39 @@ julien@ubuntu:~/0x02$ ./6-abs
 julien@ubuntu:~/0x02$ 
 ```
 </details>
+
+<details>
+<summary><a href="./7-print_last_digit.c">7. There are only 3 colors, 10 digits, and 7 notes; it's what we do with them that's important</a></summary><br>
+
+Write a function that prints the last digit of a number.
+
+- Prototype: `int print_last_digit(int);`
+- Returns the value of the last digit
+
+```bash
+julien@ubuntu:~/0x02$ cat 7-main.c
+#include "main.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int r;
+
+    print_last_digit(98);
+    print_last_digit(0);
+    r = print_last_digit(-1024);
+    _putchar('0' + r);
+    _putchar('\n');
+    return (0);
+}
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_last_digit.c -o 7-last_digit
+julien@ubuntu:~/0x02$ ./7-last_digit 
+8044
+julien@ubuntu:~/0x02$ 
+```
+
+</details>
