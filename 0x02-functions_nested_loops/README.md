@@ -270,3 +270,46 @@ julien@ubuntu:~/0x02$
 ```
 
 </details>
+
+<details>
+<summary><a href="./6-abs.c">6. There is no such thing as absolute value in this world. You can only estimate what a thing is worth to you</a></summary><br>
+
+Write a function that computes the absolute value of an integer.
+
+- Prototype: `int _abs(int);`
+
+FYI: The standard library provides a similar function: `abs`. Run `man abs` to learn more.
+
+```bash
+julien@ubuntu:~/0x02$ cat 6-main.c
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int r;
+
+    r = _abs(-1);
+    printf("%d\n", r);
+    r = _abs(0);
+    printf("%d\n", r);
+    r = _abs(1);
+    printf("%d\n", r);
+    r = _abs(-98);
+    printf("%d\n", r);
+    return (0);
+}
+julien@ubuntu:~/0x02$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-main.c 6-abs.c -o 6-abs
+julien@ubuntu:~/0x02$ ./6-abs 
+1
+0
+1
+98
+julien@ubuntu:~/0x02$ 
+```
+</details>
