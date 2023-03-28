@@ -16,7 +16,7 @@ void rev_string(char *s)
 	while (s[size] != '\0')
 		size++;
 
-	for (int i = 0; i < size / 2; i++)
+	for (i = 0; i < size / 2; i++)
 	{
 		char tmp = s[i];
 		s[i] = s[size - 1 - i];
