@@ -12,7 +12,8 @@ char *cap_string(char *str)
 {
 	int i, j;
 	const int size = 13;
-	char separators[14] = {' ', '\n', '\t', ',', ';', '.', '!', '?', '\"', '(', ')', '{', '}'};
+	char separators[14] = {' ', '\n', '\t', ',', ';', '.',
+				'!', '?', '\"', '(', ')', '{', '}'};
 
 	if ('a' <= str[0] && str[0] <= 'z')
 		str[0] = str[0] - 'a' + 'A';
@@ -22,7 +23,7 @@ char *cap_string(char *str)
 		int valid = 0;
 
 		for (j = 0; j < size; j++)
-			if (str[i-1] == separators[j])
+			if (str[i - 1] == separators[j])
 			{
 				valid = 1;
 				break;
