@@ -16,7 +16,7 @@ char *string_toupper(char *str)
 	while (str[size] != '\0')
 	{
 		if ('a' <= str[size] && str[size] <= 'z')
-			str[size] = str[size] -'a' + 'A';
+			str[size] = str[size] - 'a' + 'A';
 		size++;
 	}
 
