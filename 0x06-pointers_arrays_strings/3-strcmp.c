@@ -36,7 +36,7 @@ int _strcmp(char *s1, char *s2)
 			value = 1;
 			break;
 		}
-		else if (s2[i] < s2[i])
+		else if (s1[i] < s2[i])
 		{
 			value = -1;
 			break;
