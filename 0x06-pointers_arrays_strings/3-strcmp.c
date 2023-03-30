@@ -45,9 +45,9 @@ int _strcmp(char *s1, char *s2)
 	if (value == 0 && s1_size != s2_size)
 	{
 		if (s1_size < s2_size)
-			value = 1;
-		else
 			value = -1;
+		else
+			value = 1;
 	}
 
 	return (value);
