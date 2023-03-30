@@ -386,7 +386,7 @@ julien@ubuntu:~/0x06$
 </details>
 
 <details>
-<summary><a href="./6-cap_string.c">7. Mozart composed his music not for the elite, but for everybody</a></summary><br>
+<summary><a href="./7-leet.c">7. Mozart composed his music not for the elite, but for everybody</a></summary><br>
 
 Write a function that encodes a string into [1337](https://en.wikipedia.org/wiki/Leet).
 
