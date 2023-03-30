@@ -10,20 +10,17 @@
 
 char *leet(char *str)
 {
-	int size = 0;
+	int size = 0, i;
+	char *leet = "a4A4e3E3o0O0t7T7l1L1";
 
 	while (str[size] != '\0')
 	{
-		if (str[size] == 'a' || str[size] == 'A')
-			str[size] = '4';
-		else if (str[size] == 'e' || str[size] == 'E')
-			str[size] = '3';
-		else if (str[size] == 'o' || str[size] == 'O')
-			str[size] = '0';
-		else if (str[size] == 't' || str[size] == 'T')
-			str[size] = '7';
-		else if (str[size] == 'l' || str[size] == 'L')
-			str[size] = '1';
+		while (leet[i] != '\0')
+		{
+			if (leet[i] == str[size])
+				str[size] = leet[i+1];
+			i += 2;
+		}
 
 		size++;
 	}
