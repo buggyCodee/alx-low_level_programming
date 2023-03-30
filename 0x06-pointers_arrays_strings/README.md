@@ -210,3 +210,42 @@ First, solve the problem. Then, write the code
 julien@ubuntu:~/0x06$ 
 ```
 </details>
+
+<details>
+<summary><a href="./2-strncpy.c">3. strcmp</a></summary><br>
+
+Write a function that compares two strings.
+
+- Prototype: `int _strcmp(char *s1, char *s2);`
+- Your function should work exactly like `strcmp`
+
+FYI: The standard library provides a similar function: `strcmp`. Run `man strcmp` to learn more.
+
+```bash
+julien@ubuntu:~/0x06$ cat 3-main.c
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    char s1[] = "Hello";
+    char s2[] = "World!";
+
+    printf("%d\n", _strcmp(s1, s2));
+    printf("%d\n", _strcmp(s2, s1));
+    printf("%d\n", _strcmp(s1, s1));
+    return (0);
+}
+julien@ubuntu:~/0x06$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c 3-strcmp.c -o 3-strcmp
+julien@ubuntu:~/0x06$ ./3-strcmp 
+-15
+15
+0
+julien@ubuntu:~/0x06$ 
+```
+</details>
