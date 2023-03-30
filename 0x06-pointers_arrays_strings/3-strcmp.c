@@ -16,6 +16,7 @@ int _strcmp(char *s1, char *s2)
 	int value = 0;
 	int s1_size = 0;
 	int s2_size = 0;
+	int min_size;
 	int i;
 
 	while (s1[s1_size] != '\0')
@@ -24,7 +25,7 @@ int _strcmp(char *s1, char *s2)
 	while (s2[s2_size] != '\0')
 		s2_size++;
 
-	int min_size = s1_size;
+	min_size = s1_size;
 
 	if (s2_size < s1_size)
 		min_size = s2_size;
