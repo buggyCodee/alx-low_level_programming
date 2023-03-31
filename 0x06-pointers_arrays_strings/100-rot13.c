@@ -9,24 +9,15 @@
  */
 char *rot13(char *str)
 {
-	int size = 0;
-	int pos;
+	int i, j;
 
-	while (str[size] != '\0')
-	{
-		if ('a' <= str[size] && str[size] <= 'z')
-		{
-			pos = (((str[size] - 'a') + 13) % 26);
-			str[size] = (char)('a' + pos);
-		}
-		else if ('A' <= str[size] && str[size] <= 'A')
-		{
-			pos = (((str[size] - 'A') + 13) % 26);
-			str[size] = (char)('A' + pos);
-		}
-
-		size++;
-	}
+	char characters[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	
+	for (i = 0; str[i] != '\0'; i++)
+		for (j = 0; characters[j] != '\0'; j++)
+			if (characters[j] == str[i])
+				str[i] = rot13[j];
 
 	return (str);
 }
