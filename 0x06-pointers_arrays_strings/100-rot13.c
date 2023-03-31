@@ -13,7 +13,7 @@ char *rot13(char *str)
 
 	char characters[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char rot13[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	
+
 	for (i = 0; str[i] != '\0'; i++)
 		for (j = 0; characters[j] != '\0'; j++)
 			if (characters[j] == str[i])
