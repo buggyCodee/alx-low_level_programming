@@ -277,3 +277,56 @@ julien@ubuntu:~/0x08. Recursion$ ./5-sqrt
 julien@ubuntu:~/0x08. Recursion$ 
 ```
 </details>
+
+<details>
+<summary><a href="./6-is_prime_number.c">6. Inception. Is it possible?</a></summary><br>
+
+Write a function that returns `1` if the input integer is a [prime number](https://en.wikipedia.org/wiki/Prime_number), otherwise return `0`.
+
+- Prototype: `int is_prime_number(int n);`
+
+```bash
+julien@ubuntu:~/0x08. Recursion$ cat 6-main.c
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    int r;
+
+    r = is_prime_number(1);
+    printf("%d\n", r);
+    r = is_prime_number(1024);
+    printf("%d\n", r);
+    r = is_prime_number(16);
+    printf("%d\n", r);
+    r = is_prime_number(17);
+    printf("%d\n", r);
+    r = is_prime_number(25);
+    printf("%d\n", r);
+    r = is_prime_number(-1);
+    printf("%d\n", r);
+    r = is_prime_number(113);
+    printf("%d\n", r);
+    r = is_prime_number(7919);
+    printf("%d\n", r);
+    return (0);
+}
+julien@ubuntu:~/0x08. Recursion$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 6-main.c 6-is_prime_number.c -o 6-prime
+julien@ubuntu:~/0x08. Recursion$ ./6-prime 
+0
+0
+0
+1
+0
+0
+1
+1
+julien@ubuntu:~/0x08. Recursion$ 
+```
+</details>
