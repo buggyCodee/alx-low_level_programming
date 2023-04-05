@@ -27,5 +27,4 @@ void _puts_rev(char *s, int i)
 void _print_rev_recursion(char *s)
 {
 	_puts_rev(s, 0);
-	_putchar('\n');
 }
