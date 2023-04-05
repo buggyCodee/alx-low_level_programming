@@ -12,8 +12,8 @@
 int len_rec(char *s, int i)
 {
 	if (s[i] == '\0')
-		return 0;
-	return 1 + len_rec(s, i + 1);
+		return (0);
+	return (1 + len_rec(s, i + 1));
 }
 
 /**
@@ -26,5 +26,5 @@ int len_rec(char *s, int i)
 
 int _strlen_recursion(char *s)
 {
-	return len_rec(s, 0);
+	return (len_rec(s, 0));
 }
