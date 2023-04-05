@@ -101,7 +101,7 @@ julien@ubuntu:~/0x08. Recursion$
 ```
 </details>
 
-details>
+<details>
 <summary><a href="./2-strlen_recursion.c">2. Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange</a></summary><br>
 
 Write a function that returns the length of a string.
