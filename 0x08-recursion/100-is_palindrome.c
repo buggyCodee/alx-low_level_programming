@@ -17,7 +17,7 @@ int _is_palindrome(char *s, int i, int sz)
 	if (s[i] != s[sz - 1 - i])
 		return (0);
 
-	_is_palindrome(s, i + 1, sz);
+	return (_is_palindrome(s, i + 1, sz));
 }
 
 /**
