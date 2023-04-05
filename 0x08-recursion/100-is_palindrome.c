@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _is_palindrome - checks palindrome recursively
  *
@@ -21,6 +22,22 @@ int _is_palindrome(char *s, int i, int sz)
 }
 
 /**
+ * len_rec - funtion that gets size from specified index
+ *
+ * @s: string to be its size
+ * @i: started index to get the size from
+ *
+ * Return: int which is the size of s
+ */
+
+int len_rec(char *s, int i)
+{
+	if (s[i] == '\0')
+		return (0);
+	return (1 + len_rec(s, i + 1));
+}
+
+/**
  * is_palindrome - function that returns 1 if a string is a palindrome
  *			and 0 if not
  *
@@ -31,7 +48,8 @@ int _is_palindrome(char *s, int i, int sz)
 
 int is_palindrome(char *s)
 {
-	int sz = _strlen_recursion(s);
+	int sz = len_rec(s, 0);
 
 	return (_is_palindrome(s, 0, sz));
 }
+
