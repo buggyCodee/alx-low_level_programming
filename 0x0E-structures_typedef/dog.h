@@ -1,6 +1,8 @@
 #ifndef ALX_0X0E_DOG_H_
 #define ALX_0X0E_DOG_H_
 
+#include <stdio.h>
+
 /**
  * struct dog - structure to the dog
  *
