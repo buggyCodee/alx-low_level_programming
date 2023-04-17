@@ -161,3 +161,130 @@ julien@ubuntu:~/0x0d. structures, typedef$
 ```
 
 </details>
+
+<details>
+<summary><a href="./dog.h">3. Outside of a dog, a book is a man's best friend. Inside of a dog it's too dark to read</a></summary><br>
+
+<p align="center">
+    <img src="../.imgs/0x0E-4.jpg" width="450" height="450">
+</p>
+
+Define a new type `dog_t` as a new name for the type `struct dog`.
+
+```bash
+julien@ubuntu:~/0x0d. structures, typedef$ cat 3-main.c
+#include <stdio.h>
+#include "dog.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    dog_t my_dog;
+
+    my_dog.name = "Poppy";
+    my_dog.age = 3.5;
+    my_dog.owner = "Bob";
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog.name, my_dog.age);
+    return (0);
+}
+julien@ubuntu:~/0x0d. structures, typedef$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-main.c -o d
+julien@ubuntu:~/0x0d. structures, typedef$ ./d 
+My name is Poppy, and I am 3.5 :) - Woof!
+julien@ubuntu:~/0x0d. structures, typedef$ 
+```
+
+</details>
+
+<details>
+<summary><a href="./4-new_dog.c">4. A door is what a dog is perpetually on the wrong side of</a></summary><br>
+
+<p align="center">
+    <img src="../.imgs/0x0E-5.jpg" width="450" height="450">
+</p>
+
+Write a function that creates a new dog.
+
+- Prototype: `dog_t *new_dog(char *name, float age, char *owner);`
+- You have to store a copy of `name` and `owner`
+- Return `NULL` if the function fails
+
+```bash
+julien@ubuntu:~/0x0d. structures, typedef$ cat 4-main.c
+#include <stdio.h>
+#include "dog.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    dog_t *my_dog;
+
+    my_dog = new_dog("Poppy", 3.5, "Bob");
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
+    return (0);
+}
+julien@ubuntu:~/0x0d. structures, typedef$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-main.c 4-new_dog.c -o e
+julien@ubuntu:~/0x0d. structures, typedef$ ./e
+My name is Poppy, and I am 3.5 :) - Woof!
+julien@ubuntu:~/0x0d. structures, typedef$ 
+```
+</details>
+
+<details>
+<summary><a href="./5-free_dog.c">5. How many legs does a dog have if you call his tail a leg? Four. Saying that a tail is a leg doesn't make it a leg</a></summary><br>
+
+<p align="center">
+    <img src="../.imgs/0x0E-6.jpg" width="450" height="450">
+</p>
+
+Write a function that frees dogs.
+
+- Prototype: `void free_dog(dog_t *d);`
+
+```bash
+julien@ubuntu:~/0x0d. structures, typedef$ cat 5-main.c
+#include <stdio.h>
+#include "dog.h"
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+    dog_t *my_dog;
+
+    my_dog = new_dog("Poppy", 3.5, "Bob");
+    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
+    free_dog(my_dog);
+    return (0);
+}
+julien@ubuntu:~/0x0d. structures, typedef$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 5-main.c 5-free_dog.c 4-new_dog.c -o f
+julien@ubuntu:~/0x0d. structures, typedef$ valgrind ./f
+==22840== Memcheck, a memory error detector
+==22840== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==22840== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==22840== Command: ./f
+==22840== 
+My name is Poppy, and I am 3.5 :) - Woof!
+==22840== 
+==22840== HEAP SUMMARY:
+==22840==     in use at exit: 0 bytes in 0 blocks
+==22840==   total heap usage: 4 allocs, 4 frees, 1,059 bytes allocated
+==22840== 
+==22840== All heap blocks were freed -- no leaks are possible
+==22840== 
+==22840== For counts of detected and suppressed errors, rerun with: -v
+==22840== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+julien@ubuntu:~/0x0d. structures, typedef$ 
+```
+
+</details>
