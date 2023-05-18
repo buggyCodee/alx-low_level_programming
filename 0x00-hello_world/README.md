@@ -4,11 +4,11 @@
 
 For this project, we expect you to look at this concept:
 
-- [C programming](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2022/4/e0ccf91eec6b977a9e00ed384dc285df9c2772e3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230401%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230401T220543Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=d4f383d9d63a4f26bdc4087da678432788ff1b7e92754010f2fd9fa42416e03b)
+- [C programming](../resources/alx/0x00-Everything%20you%20need%20to%20know%20to%20start%20with%20C.pdf)
 
 ## Resources
 
-- [Everything you need to know to start with C.pdf](https://s3.amazonaws.com/alx-intranet.hbtn.io/uploads/misc/2022/4/e0ccf91eec6b977a9e00ed384dc285df9c2772e3.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOUSBVO6H7D%2F20230401%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230401T220821Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=1a4507ab051648d5e46bafe82997a84db255fd44611e3cdbfa52c511ab1317f3) (You do not have to learn everything in there yet, but make sure you read it entirely first)
+- [Everything you need to know to start with C.pdf](../resources/alx/0x00-Everything%20you%20need%20to%20know%20to%20start%20with%20C.pdf) (You do not have to learn everything in there yet, but make sure you read it entirely first)
 - [Dennis Ritchie](https://en.wikipedia.org/wiki/Dennis_Ritchie)
 - [“C” Programming Language: Brian Kernighan](https://www.youtube.com/watch?v=de2Hsvxaf8M)
 - [Why C Programming Is Awesome](https://www.youtube.com/watch?v=smGalmxPVYc)
