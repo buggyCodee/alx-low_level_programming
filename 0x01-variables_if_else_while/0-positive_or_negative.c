@@ -3,10 +3,13 @@
 #include <time.h>
 
 /**
- * main -
+ * main - program that generates a random number and prints it
+ *	+ if the number "is zero" or "i positive" or "is negative"
  *
+ * Return: Always 0
  */
-int main()
+
+int main(void)
 {
 	int n;
 
@@ -17,7 +20,7 @@ int main()
 
 	if (n == 0)
 		puts("is zero");
-	else if ( n > 0)
+	else if (n > 0)
 		puts("is positive");
 	else
 		puts("is negative");
