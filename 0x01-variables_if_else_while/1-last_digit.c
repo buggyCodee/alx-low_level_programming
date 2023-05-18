@@ -5,7 +5,7 @@
 /**
  * main - generates a random number n and prints and it's last digit
  *
- * Return: 0
+ * Return: Always 0
  */
 
 int main(void)
@@ -21,7 +21,7 @@ int main(void)
 	if (n % 10 > 5)
 		puts("greater than 5");
 	else if (n % 10 == 0)
-		puts("zero");
+		puts("0");
 	else
 		puts("less than 6 and not 0");
 
