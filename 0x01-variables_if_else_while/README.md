@@ -138,3 +138,21 @@ Last digit of 809065140 is 0 and is 0
 julien@ubuntu:~/0x01$
 ```
 </details>
+
+
+<details>
+<summary><a href="./2-print_alphabet.c">2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game</a></summary><br>
+
+Write a program that prints the alphabet in lowercase, followed by a new line.
+
+- You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
+- All your code should be in the main function
+- You can only use `putchar` twice in your code
+
+```bash
+julien@ubuntu:~/0x01$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-print_alphabet.c -o 2-print_alphabet
+julien@ubuntu:~/0x01$ ./2-print_alphabet 
+abcdefghijklmnopqrstuvwxyz
+julien@ubuntu:~/0x01$
+```
+</details>
