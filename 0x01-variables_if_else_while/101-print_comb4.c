@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - program that prints all possible different combinations of three digits
+ * main - program that prints all possible different combinations of 3 digits
  *		012, 120, 102, 021, 201, 210 are considered the same combination
  *			of the three digits 0, 1 and 2
  *
