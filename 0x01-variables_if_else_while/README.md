@@ -189,3 +189,22 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$
 julien@ubuntu:~/0x01$ 
 ```
 </details>
+
+<details>
+<summary><a href="./4-print_alphabt.c">4. When I was having that alphabet soup, I never thought that it would pay off</a></summary><br>
+
+Write a program that prints the alphabet in lowercase, followed by a new line.
+
+- Print all the letters except `q` and `e`
+- You can only use the `putchar` function (every other function (`printf`, `puts`, etc…) is forbidden)
+All your code should be in the `main` function
+You can only use `putchar` twice in your code
+
+```bash
+julien@ubuntu:~/0x01$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabt.c -o 4-print_alphabt
+julien@ubuntu:~/0x01$ ./4-print_alphabt 
+abcdfghijklmnoprstuvwxyz
+julien@ubuntu:~/0x01$ ./4-print_alphabt | grep [eq]
+julien@ubuntu:~/0x01$ 
+```
+</details>
