@@ -18,9 +18,9 @@ int main(void)
 		while (digit_two < '9')
 		{
 			new_digit_one = digit_one;
+			new_digit_two = digit_two + 1;
 			while (new_digit_one <= '9')
 			{
-				new_digit_two = digit_two + 1;
 				while (new_digit_two <= '9')
 				{
 					putchar(digit_one);
@@ -35,6 +35,7 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
+				new_digit_two = '0';
 				new_digit_one++;
 			}
 			digit_two++;
