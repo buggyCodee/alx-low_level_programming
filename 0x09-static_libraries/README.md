@@ -87,6 +87,18 @@ __Read more__
 - [Using A “C” Library In A Program](https://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html)
 - [What is difference between Dynamic and Static library(Static and Dynamic linking)](https://www.youtube.com/watch?v=eW5he5uFBNM) (stop at 4:44)
 
+<details>
+<summary>External Resources</summary><br>
+
+- [Static vs. Shared Libraries](https://youtu.be/-vp9cFQCQCo)
+- [How to write your own code libraries in C.](https://youtu.be/JbHmin2Wtmc)
+- [Using Libraries in C++ (Static Linking)](https://youtu.be/or1dAmUO8k0)
+- [Using Dynamic Libraries in C++](https://youtu.be/pLy69V2F_8M)
+- [Making and Working with Libraries in C++ (Multiple Projects in Visual Studio)](https://youtu.be/Wt4dxDNmDA8)
+
+</details>
+
+
 ### man or help:
 - `ar`
 - `ranlib`
