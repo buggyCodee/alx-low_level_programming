@@ -11,27 +11,32 @@
  *		Returns NULL if str = NULL
  *		Returns NULL if insufficient memory was available
  *
- * Memory for the new string is obtained with malloc, and can be freed with free
+ * Memory for the new string is obtained with malloc,
+ *				and can be freed with free
  */
 
 char *_strdup(char *str)
 {
-	int size = 0;
-
-	while (str[size++] != '\0')
-		;
-
-	if (size)
+	if (str != NULL)
 	{
-		int i;
-		char *new_str = (char *) malloc(sizeof(char) * size + 1);
+		int size = 0;
 
-	        if (new_str != NULL)
-			for (i = 0; i <= size; i++)
-				new_str[i] = str[i];
+		while (str[size++] != '\0')
+			;
 
-		return (new_str);
+		if (size)
+		{
+			int i;
+			char *new_str = (char *) malloc(sizeof(char)
+							* size + 1);
+
+			if (new_str != NULL)
+				for (i = 0; i <= size; i++)
+					new_str[i] = str[i];
+
+			return (new_str);
+		}
 	}
 
-        return (NULL);
+	return (NULL);
 }
