@@ -15,10 +15,15 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i;
-	char *new_memory = malloc(nmemb * size);
+	char *new_memory;
 
-	if (nmemb <= 0 || size <= 0 || new_memory == NULL)
+	if (nmemb <= 0 || size <= 0)
 		return (NULL);
+
+	new_memory = malloc(nmemb * size);
+
+	if (new_memory == NULL)
+		return (new_memory);
 
 	for (i = 0; i < (nmemb * size); i++)
 		new_memory[i] = 0;
