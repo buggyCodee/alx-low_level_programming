@@ -25,12 +25,12 @@ char *str_concat(char *s1, char *s2)
 		while (s2[size_two++] != '\0')
 			;
 
-        total_size = size_one + size_two;
+        total_size = size_one + size_two + 1;
 
 	if (total_size)
 	{
 		int i;
-		char *new_str = malloc(sizeof(char) * total_size + 1);
+		char *new_str = malloc(sizeof(char) * total_size);
 
 		if (new_str == NULL)
 			return (new_str);
@@ -38,8 +38,10 @@ char *str_concat(char *s1, char *s2)
 		for (i = 0; i < size_one; i++)
 			new_str[i] = s1[i];
 
-		for (i = 0; i <= size_two; i++)
+		for (i = 0; i < size_two; i++)
 			new_str[size_one + i] = s2[i];
+
+		new_str[total_size - 1] = '\0';
 
 		return (new_str);
 	}
