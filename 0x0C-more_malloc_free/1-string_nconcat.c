@@ -60,10 +60,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i < size_one; i++)
 		new_str[i] = s1[i];
 
-	for (; i < total_size; i++)
+	for (; i < total_size - 1; i++)
 		new_str[i] = s2[i - size_one];
 
-	new_str[total_size] = '\0';
+	new_str[total_size - 1] = '\0';
 
 	return (new_str);
 }
