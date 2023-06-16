@@ -12,7 +12,7 @@ int length(char *str)
 {
 	int size = 0;
 
-	if (s1 != NULL)
+	if (str != NULL)
 		while (str[size] != '\0')
 			size++;
 	return (size);
@@ -36,11 +36,11 @@ int length(char *str)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i;
+	unsigned int i;
 	char *new_str;
-	int size_one = length(s1);
-	int size_two = length(s2);
-	int total_size = 0;
+	unsigned int size_one = length(s1);
+	unsigned int size_two = length(s2);
+	unsigned int total_size = 0;
 
 	if (n > size_two)
 		n = size_two;
