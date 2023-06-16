@@ -42,6 +42,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int size_two = length(s2);
 	unsigned int total_size = 0;
 
+	if (s1 == NULL || s2 == NULL)
+		return (NULL);
+
 	if (n > size_two)
 		n = size_two;
 
