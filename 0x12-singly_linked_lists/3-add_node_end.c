@@ -4,6 +4,24 @@
 #include "lists.h"
 
 /**
+ * length - returns a length of string
+ *
+ * @str: input string
+ *
+ * Return: length of string
+ */
+
+int length(const char *str)
+{
+	int len = 0;
+
+	while (str[len] != '\0')
+		++len;
+
+	return(len);
+}
+
+/**
  * add_node_end - function that adds a new node at the end of a list_t list
  *
  * @head: pointer to the first node of the linked list
@@ -21,7 +39,7 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	new_node->next = NULL;
 	new_node->str = strdup(str);
-	new_node->len = strlen(str);
+	new_node->len = length(str);
 
 	while (*head && (*head)->next != NULL)
 		*head = (*head)->next;
