@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * add_node - function that adds a new node at the beginning of a list_t list
+ * add_node_end - function that adds a new node at the end of a list_t list
  *
  * @head: pointer to the first node of the linked list
  * @str: the string [data] to the new node adde to the linked list
