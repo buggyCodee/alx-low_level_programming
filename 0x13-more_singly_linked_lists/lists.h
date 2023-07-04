@@ -1,6 +1,8 @@
 #ifndef ALX_0X13_MORE_SINGLY_LINKED_LISTS_H_
 #define ALX_0X13_MORE_SINGLY_LINKED_LISTS_H_
 
+#include <stdio.h>
+#include <stdlib.h>
 
 /**
  * struct listint_s - singly linked list
@@ -18,5 +20,6 @@ typedef struct listint_s
 } listint_t;
 
 size_t print_listint(const listint_t *h);
+size_t listint_len(const listint_t *h);
 
 #endif /* ALX_0X13_MORE_SINGLY_LINKED_LISTS_H_ */
