@@ -25,5 +25,6 @@ listint_t *add_nodeint(listint_t **head, const int n);
 listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_listint(listint_t *head);
 void free_listint2(listint_t **head);
+int pop_listint(listint_t **head);
 
 #endif /* ALX_0X13_MORE_SINGLY_LINKED_LISTS_H_ */
