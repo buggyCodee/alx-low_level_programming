@@ -5,11 +5,11 @@
  *
  * @head: list
  *
- * Returns: pointer to the first node of the reversed list
+ * Return: pointer to the first node of the reversed list
  *
- * Notes:	You are not allowed to use more than 1 loop.
- *		You are not allowed to use malloc, free or arrays
- *		You can only declare a maximum of two variables in your function
+ * You are not allowed to use more than 1 loop.
+ * You are not allowed to use malloc, free or arrays
+ * You can only declare a maximum of two variables in your function
  */
 
 listint_t *reverse_listint(listint_t **head)
